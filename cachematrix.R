@@ -28,8 +28,10 @@ cacheSolve <- function(x, ...) {
   data<-x$get()
   s<-t(data)
   x$set_Transpose(s)
-  s
-  
+  s  
 }
-
+y<-matrix(1:6,2,3)
+x<-makeCacheMatrix(y)
+cacheSolve(x)
+cacheSolve(x)
 
