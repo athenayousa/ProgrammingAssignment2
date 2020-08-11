@@ -30,6 +30,7 @@ cacheSolve <- function(x, ...) {
   x$set_Transpose(s)
   s  
 }
+##Example
 y<-matrix(1:6,2,3)
 x<-makeCacheMatrix(y)
 cacheSolve(x)
